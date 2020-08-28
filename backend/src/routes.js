@@ -13,7 +13,7 @@ const RejectionController = require('./controllers/RejectionController');
 const routes = express.Router();
 const upload = multer(uploadConfig);
 
-routes.get('/status', (req, res) => {
+routes.get('/status', (req, res) => {   //To check if the api call is working
     res.send({status: 200});
 });
 
